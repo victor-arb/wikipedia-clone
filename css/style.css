@@ -10,6 +10,9 @@ html{
 a {
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
 li {
     list-style: none;
 }
@@ -228,21 +231,93 @@ footer .footer-links {
     font-size: 1.3rem;
     border-top: 1px solid #e4e4e4;
 }
-footer ul {
-    margin: 10px;
-    list-style: none;
+
+footer {
+    width: 100%;
+    min-height: 500px;
+    /*Asegurar que el footer siempre este al final de la pagina*/
+    /* position: absolute;
+    bottom: 0; */
+
+    background-color: #fff;
+    border-top: 1px solid #bdbbbb;
     display: flex;
-    padding-left: 0;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 50px;
+
 }
-footer .footer-left {
-    justify-content: left;
+
+
+footer .link-list-left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 70px;
 }
-footer .footer-right {
-    justify-content: right;
-}
-footer ul li a {
+footer .link-list-left .publicity{ 
+    max-width: 400px;
     margin: 10px;
-    color: #5f6368
+    
 }
+.link-list-left .publicity img{
+    width: 100%;
+    object-fit: contain;
+}
+footer .link-list-right {
+    width: 60%;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-right: 0;
+
+}
+footer .link-list-right h3 {
+    color:#36c;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 3px ;
+}
+
+footer .link-list-right .links-list-item {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1%;
+    padding: 40px;
+
+    
+}
+footer .link-list-right .links-list-item:hover {
+    background-color: #e1e0e0;
+} 
+footer .link-list-right .links-list-item img{
+    width:20%;
+    object-fit: contain;
+    align-self: center;
+    margin-right: 10px;
+}
+footer .footer-license{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-top: 1px solid #bdbbbb;
+    padding-top:10px ;
+
+
+}
+footer .footer-license ul {
+    display: flex;
+    margin-left: 25px;
+}
+footer .footer-license ul li{
+    margin-right: 20px;
+}
+
+
 
 
